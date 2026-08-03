@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "Mitarbeiter": {
+      "placeholders_set": 7,
+      "defaults_keys": ["beschaeftigungsart"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten ohne numerische Berechnungen oder Preisabhängigkeiten. Beschäftigungsart erhält einen Default (Vollzeit als Standardwert)."
+    },
+    "Schichtvorlagen": {
+      "placeholders_set": 7,
+      "defaults_keys": ["schichttyp", "mindestbesetzung"],
+      "computed_keys": [],
+      "reason": "Schichttyp-Katalog mit Kapazitätsangabe. Mindestbesetzung ist kein Produkt/Summe sondern Constraint-Parameter, daher keine computed-Formeln nötig."
+    },
+    "Schichtplan": {
+      "placeholders_set": 5,
+      "defaults_keys": ["datum", "status"],
+      "computed_keys": [],
+      "reason": "Hub-Entity für Schicht-Zuweisung mit Datumfeld (heute) und Status-Lookup (Geplant). Keine Geldberechnung oder Mengen-Aggregation — applookup auf Schichtvorlage liefert nur Referenz-Constraints, keine Multiplikanduswerte."
+    }
+  }
+}

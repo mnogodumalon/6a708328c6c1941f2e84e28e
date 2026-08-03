@@ -1,0 +1,27 @@
+{
+  "MitarbeiterDialog.tsx": {
+    "vorname": "z. B. Max",
+    "nachname": "z. B. Müller",
+    "telefon": "z. B. +49 123 456789",
+    "email": "z. B. max@example.de",
+    "abteilung": "z. B. Lager, Verkauf",
+    "position": "z. B. Schichtleiter",
+    "beschaeftigungsart": "z. B. Vollzeit, Teilzeit"
+  },
+  "SchichtvorlagenDialog.tsx": {
+    "schichtname": "z. B. Frühdienst Mo-Do",
+    "schichttyp": "Welcher Schichttyp?",
+    "startzeit": "z. B. 06:00",
+    "endzeit": "z. B. 14:00",
+    "bereich": "z. B. Produktion",
+    "mindestbesetzung": "z. B. 2",
+    "beschreibung": "Aufgaben, besondere Anforderungen..."
+  },
+  "SchichtplanDialog.tsx": {
+    "datum": "Wann wird eingeplant?",
+    "mitarbeiter": "Mitarbeiter wählen",
+    "schichtvorlage": "Schichtvorlage auswählen",
+    "status": "Geplant, Bestätigt oder Abwesend",
+    "notizen": "Vertretung, Besonderheiten..."
+  }
+}
