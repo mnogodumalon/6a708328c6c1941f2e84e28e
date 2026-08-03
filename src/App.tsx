@@ -16,6 +16,8 @@ import SchichtvorlagenDetailPage from '@/pages/SchichtvorlagenDetailPage';
 import SchichtplanPage from '@/pages/SchichtplanPage';
 import SchichtplanDetailPage from '@/pages/SchichtplanDetailPage';
 // <custom:imports>
+const SchichtplanungPage = lazy(() => import('@/pages/intents/SchichtplanungPage'));
+const SchichtStatusPage = lazy(() => import('@/pages/intents/SchichtStatusPage'));
 // </custom:imports>
 
 // Lazy: public pages live outside <Layout> and only load on /#/public/:slug —
@@ -41,6 +43,8 @@ export default function App() {
                 <Route path="admin" element={<AdminPage />} />
                 <Route path="verwaltung/oeffentliche-seiten" element={<PublicPagesAdmin />} />
                 {/* <custom:routes> */}
+                <Route path="intents/schichtplanung" element={<Suspense fallback={null}><SchichtplanungPage /></Suspense>} />
+                <Route path="intents/schicht-status" element={<Suspense fallback={null}><SchichtStatusPage /></Suspense>} />
                 {/* </custom:routes> */}
               </Route>
             </Routes>
